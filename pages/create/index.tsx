@@ -5,17 +5,7 @@ export default function Create() {
   const [loading, setLoading] = React.useState(false);
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
-  React.useEffect(() => {
-    // fetch("http://localhost:3000/api/cards")
-    //   .then((res) => {
-    //     return res.json();
-    //   })
-    //   .then((res) => {
-    //     console.log(res);
-    //     setCards({ cards: [...res.cards] });
-    //   });
-    return () => {};
-  }, []);
+
   const handleTitleChange = (evt: any) => {
     setTitle(evt.target.value);
   };
