@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 
 export default function Create() {
   const [cards, setCards] = React.useState({ cards: [{ title: "Title" }] });
@@ -46,6 +47,9 @@ export default function Create() {
   return (
     <div>
       <h1>Create page</h1>
+      <Link href="/">
+          Home
+        </Link>
       <form onSubmit={handleSubmit}>
         <input type="text" onChange={handleTitleChange} />
         <input type="text" onChange={handleDescriptionChange} />
