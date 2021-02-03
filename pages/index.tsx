@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+ import hello from './api/hello'
 
 export default function Home() {
   console.log(process.env.DB_USER)
@@ -52,7 +53,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-   
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
